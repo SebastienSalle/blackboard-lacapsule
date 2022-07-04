@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "5c4b2a0bd10a245b476db547"
+  },
+  "title": "Xiaomi M365",
+  "description": "Autonomie Jusqu'à 25 km, Vitesse max. 25 km/h",
+  "price": 370,
+  "stock": 12,
+  "weight": 12.5,
+  "img": "inmotion-l8f.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5c4b2a9cd10a245b476db549"
+  },
+  "title": "Inmotion L8F",
+  "description": "Urbain - Route (8'), Autonomie Jusqu'à 30 km, Vitesse max. 30 km/h",
+  "price": 549,
+  "stock": 9,
+  "weight": 11.7,
+  "img": "inmotion-l8f.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5c4b2a5fd10a245b476db548"
+  },
+  "title": "E-Twow Booster Evolution S",
+  "description": "Urbain - Route (8'), Autonomie Jusqu'à 30 km, Vitesse max. 35 km/h",
+  "price": 800,
+  "stock": 8,
+  "weight": 11,
+  "img": "e-twow-evolution-s.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5c52eccab8157ffa0769a598"
+  },
+  "title": "Ninebot by Segway Kickscooter ES2",
+  "description": "Urbain - Route (8'), Autonomie Jusqu'à 25 km, Vitesse max. 25 km/h",
+  "price": 499,
+  "stock": 0,
+  "weight": 12.5,
+  "img": "ninebot-segway-kickscooter.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5c5173090ddc272958d9e2ec"
+  },
+  "title": "Ninebot by Segway Kickscooter ES2",
+  "description": "Urbain - Route (8'), Autonomie Jusqu'à 25 km, Vitesse max. 25 km/h",
+  "price": 499,
+  "stock": 0,
+  "weight": 12.5,
+  "img": "ninebot-segway-kickscooter.jpg",
+  "__v": 0
+}]

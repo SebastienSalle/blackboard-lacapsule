@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BlackBoard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- include('header', {adminFName, adminLName}) -->
+    <%- include('partials/header') %>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <%- include('partials/sidebar') %>
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+
+
+          <div class="row">
+
+            <div class="col-12 col-md-5 mb-2 chart">
+                <!-- <img class="img-fluid" src="/images/chart1.jpg"> -->
+                <canvas id="chartBar" width="100" height="100" data-maleusers="<%=maleUsers%>" data-femaleusers="<%=femaleUsers%>" data-otherusers="<%=otherUsers%>"></canvas>
+                <!-- Passer les info du ejs vers jsFrontend par des attr. personalisé -->
+              </div>
+
+            <div class="col-12 col-md-5 mb-2 chart">
+              <!-- <img class="img-fluid" src="/images/chart2.jpg"> -->
+              <canvas id="chartDoughnut" width="100" height="100" data-unread="<%=unreadMessages%>" data-read="<%=readMessages%>"></canvas>
+            </div>
+
+            <div class="col-12 col-md-5 mb-3 chart">
+              <!-- <img class="img-fluid" src="/images/chart3.jpg"> -->
+              <canvas id="chartPie" width="100" height="100" data-sended="<%=sended%>" data-unsended="<%=unsended%>"></canvas>
+            </div>
+
+            <div class="col-12 col-md-5 mb-3 chart">
+              <!-- <img class="img-fluid" src="/images/chart4.jpg"> -->
+              
+              <canvas id="chartLine" width="100" height="100" 
+              <%let yearDisplayed = 2019;
+                const month = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+
+              for (let i = 0; i < caData.length; i++){
+                if(yearDisplayed === caData[i]._id.caYear){%>
+                  data-<%=month[caData[i]._id.caMonth]%> = <%=caData[i].caTotal%>
+                <%}
+              }%>
+              ></canvas>
+            </div>
+            
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Blackboard</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Chart scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
+  
+    <!-- Custom Dataviz script -->
+    <script src="js/dataviz.js"></script>
+  </body>
+
+</html>

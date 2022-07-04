@@ -1,0 +1,157 @@
+[{
+  "_id": {
+    "$oid": "5c52f4e93ca608fb37f48013"
+  },
+  "articles": [
+    {
+      "$oid": "5c52eccab8157ffa0769a598"
+    },
+    {
+      "$oid": "5c5173090ddc272958d9e2ec"
+    }
+  ],
+  "total": 998,
+  "shipping_cost": 20,
+  "date_insert": {
+    "$date": {
+      "$numberLong": "1554854400000"
+    }
+  },
+  "status_payment": "validated",
+  "date_payment": {
+    "$date": {
+      "$numberLong": "1554854400000"
+    }
+  },
+  "status_shipment": true,
+  "date_shipment": {
+    "$date": {
+      "$numberLong": "1554854400000"
+    }
+  },
+  "delivery_address": "11 rue de Versailles",
+  "delivery_city": "Paris",
+  "delivery_zipcode": "75006",
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "5c52f4e93ca608fb37f48009"
+  },
+  "articles": [
+    {
+      "$oid": "5c52eccab8157ffa0769a598"
+    },
+    {
+      "$oid": "5c4b2a0bd10a245b476db547"
+    }
+  ],
+  "total": 889,
+  "shipping_cost": 20,
+  "date_insert": {
+    "$date": {
+      "$numberLong": "1569888000000"
+    }
+  },
+  "status_payment": "validated",
+  "date_payment": {
+    "$date": {
+      "$numberLong": "1569888000000"
+    }
+  },
+  "status_shipment": true,
+  "date_shipment": {
+    "$date": {
+      "$numberLong": "1569974400000"
+    }
+  },
+  "delivery_address": "10 rue des lilas",
+  "delivery_city": "Paris",
+  "delivery_zipcode": "75002",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5c52f4e93ca608fb37f48010"
+  },
+  "articles": [
+    {
+      "$oid": "5c4b2a5fd10a245b476db548"
+    },
+    {
+      "$oid": "5c4b2a9cd10a245b476db549"
+    }
+  ],
+  "total": 889,
+  "shipping_cost": 20,
+  "date_insert": {
+    "$date": {
+      "$numberLong": "1538352000000"
+    }
+  },
+  "status_payment": "refused",
+  "date_payment": null,
+  "status_shipment": false,
+  "date_shipment": null,
+  "delivery_address": "10 rue des papillons",
+  "delivery_city": "Paris",
+  "delivery_zipcode": "75005",
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "5c52f4e93ca608fb37f48014"
+  },
+  "articles": [
+    {
+      "$oid": "5c4b2a9cd10a245b476db549"
+    }
+  ],
+  "total": 549,
+  "shipping_cost": 20,
+  "date_insert": {
+    "$date": {
+      "$numberLong": "1564876800000"
+    }
+  },
+  "status_payment": "validated",
+  "date_payment": {
+    "$date": {
+      "$numberLong": "1564876800000"
+    }
+  },
+  "status_shipment": false,
+  "date_shipment": null,
+  "delivery_address": "78 rue de Cocaille",
+  "delivery_city": "Paris",
+  "delivery_zipcode": "75009",
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "5c52f4e93ca608fb37f48123"
+  },
+  "articles": [
+    {
+      "$oid": "5c52eccab8157ffa0769a598"
+    },
+    {
+      "$oid": "5c4b2a0bd10a245b476db547"
+    }
+  ],
+  "total": 889,
+  "shipping_cost": 20,
+  "date_insert": {
+    "$date": {
+      "$numberLong": "1538352000000"
+    }
+  },
+  "status_payment": "waiting",
+  "date_payment": {
+    "$date": {
+      "$numberLong": "1538352000000"
+    }
+  },
+  "status_shipment": false,
+  "date_shipment": null,
+  "delivery_address": "13 boulevard Raspail",
+  "delivery_city": "Paris",
+  "delivery_zipcode": "75002",
+  "__v": 7
+}]
