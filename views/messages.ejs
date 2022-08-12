@@ -49,14 +49,13 @@
             </thead>
             <tbody>
               <%for(let i = 0; i < messages.length; i++){
+                let readIcon = "fa-envelope"
                 if(messages[i].read){
-                  let read = "fa-envelope-open"
-                }  else {
-                  let read = "fa-envelope"
+                  readIcon = "fa-envelope-open"
                 }
               %>
-                <tr>
-                  <td><i class="fas <%=read%>"></i></td>
+                <tr key="<%=i%>">
+                  <td><i class="fas <%=readIcon%>"></i></td>
                   <td><%=messages[i].title%></td>
                   <td><%=messages[i].sender%></td>
                   <td><%=messages[i].dateExp%></td>

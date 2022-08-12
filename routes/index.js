@@ -93,16 +93,22 @@ router.get("/charts", async function (req, res, next) {
   const femaleUsers = await userModel.find({
     status: "customer",
     pronoun1: "she",
+    pronoun2: "her",
   });
   const maleUsers = await userModel.find({ 
     status: "customer", 
-    pronoun1: "he" 
+    pronoun1: "he",
+    pronoun2: "him",
   });
   const otherUsers = await userModel.find({ 
     status: "customer", 
     pronoun1: "they", 
   });
-
+  const allUsers = await userModel.find({ 
+    status: "customer" 
+  });
+  const noBinUsers = allUsers.length-(femaleUsers.length + maleUsers.length);
+  
   const user = await userModel.findById(adminID);
   const messages = user.messages;
 
@@ -140,7 +146,7 @@ router.get("/charts", async function (req, res, next) {
     caTotal: { $sum: "$total" },
   });
   aggregate.sort({ _id: 1 });
-  
+  console.log(aggregate.sort({ _id: 1 }))
   const caData = await aggregate.exec();
 
   res.render("charts", {

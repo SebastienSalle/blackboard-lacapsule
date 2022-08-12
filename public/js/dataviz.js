@@ -16,7 +16,7 @@ console.log(ctx.dataset.femaleusers);
 new Chart(ctx,{
     type: 'bar',
     data: {
-      labels: ["Homme","Femme","Plus"],
+      labels: ["Hommes","Femmes","Plus"],
       datasets: [
         {
           label: "Client (personne)",

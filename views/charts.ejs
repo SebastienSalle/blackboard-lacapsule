@@ -65,13 +65,15 @@
               <canvas id="chartLine" width="100" height="100" 
               <%let yearDisplayed = 2019;
                 const month = ["january","february","march","april","may","june","july","august","september","october","november","december"];
-
-              for (let i = 0; i < caData.length; i++){
-                if(yearDisplayed === caData[i]._id.caYear){%>
+  // WHAT THE PURPOSE OF THOSE LINES ? TO SET THE GRAPH DYNAMIC ?
+                for (let i = 0; i < caData.length; i++){
+                  if(yearDisplayed === caData[i]._id.caYear){
+              %>
                   data-<%=month[caData[i]._id.caMonth]%> = <%=caData[i].caTotal%>
-                <%}
-              }%>
-              ></canvas>
+                
+                  <%}
+                }%>
+              </canvas>
             </div>
             
           </div>
